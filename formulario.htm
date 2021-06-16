@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Nunito: ital, wght @ 0,200; 0,700; 1.400; 1.900 & display = swap "rel =" stylesheet ">  
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="" method="POST"> 
+        <legend>cadastro</legend>
+        <br>
+        <label>Nome:
+        <br>
+        <input type="texto" name="nome" placeholder="insira o nome" required> </label>
+        <br>
+        <br>
+        <label>Email:
+        <br>
+        <input type="texto" name="email" placeholder="insira sem email" required></label>
+        <br>
+        <br>
+        <label>Idade:
+        <br>
+        <input type="number" name="idade" value="min 12" placeholder="insira sua idade" required></label>
+        <br>
+        <br>
+        <label> Data de Nascimento:
+        <br>
+        <input type="date" id="calendário" required></label>
+        <br>
+        <br>
+        <label>Onde você possui conta:
+        <br>
+        <input type="checkbox" value="instagran" name="rede social" required>Instagran
+        <input type="checkbox" value="facebook" name="rede social" required>Facebook
+        <input type="checkbox" value="youtube" name="rede social" required>Youtube
+        </label>
+        <br>
+        <br>
+        <label> Sexo:
+        <br>    
+        <input type="radio"  value="Feminino" name="genero" required>Feminino 
+        <input type="radio" value="Masculino" name="genero" required>Masculino</label>
+        <br>
+        <br>
+        <label> Cor dos olhos:
+        <br>
+        <input type="color" name="cor dos olhos" required></label>
+        <br>
+        <br>
+        <label> Biografia:
+        <br>
+        <textarea class="imp" name="Biografia" rows="5" cols="35" required></textarea> </label>
+        <br>
+        <br>
+        <label> Foto do perfil:
+        <br>
+        <input type="file" name="foto" accept="img/*" required></label>
+        <br>
+        <br>
+        <label> Telefone:
+        <br>    
+        <input type="number" name="numero telefone" placeholder="Insira seu numero" required></label>
+        <br>
+        <br>
+        <label> Link perfil Facebook:
+        <br>
+        <input type="url" name="perfil facebook" placeholder="insira seu perfil" accept="url" required></label>
+        <br>
+        <br>
+        <label> Senha:
+        <br>
+        <input type="password" name="senha" minlength="6" maxlength="8" placeholder="insira sua senha" required></label>
+        <br>
+        <button onclick="alert" class="reset" type="reset"> limpar</button>
+        <button onclick="alert" class="send-data" type="submit"> enviar dados</button>
+        
+</form>
+    
+</body>
+</html>
